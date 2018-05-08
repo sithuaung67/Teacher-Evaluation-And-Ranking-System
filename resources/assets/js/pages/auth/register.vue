@@ -20,7 +20,6 @@
               <has-error :form="form" field="email"/>
             </div>
           </div>
-
           <!-- Password -->
           <div class="form-group row">
             <label class="col-md-3 col-form-label text-md-right">{{ $t('password') }}</label>
@@ -84,7 +83,7 @@ export default {
     async register () {
       // Register the user.
       const { data } = await this.form.post('/api/register')
-
+      console.log("here")
       // Log in the user.
       const { data: { token } } = await this.form.post('/api/login')
 
