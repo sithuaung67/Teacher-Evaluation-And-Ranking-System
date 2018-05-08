@@ -23,10 +23,9 @@
 export default {
   name: "Sidebar",
   data: () => ({
-
+    closeRight: false
   }),
-  mounted(){
-      $("#wrapper").toggleClass("toggled");
+  method: {
   }
 }
 

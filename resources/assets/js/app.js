@@ -6,15 +6,13 @@ import App from '~/components/App';
 import BootstrapVue from 'bootstrap-vue'
 import VueBsDrawer from 'vue-bs-drawer'
 
-
 import '~/plugins';
 import '~/components';
 
 
-Vue.use(BootstrapVue);
 Vue.component('bs-drawer', VueBsDrawer)
+Vue.use(BootstrapVue);
 
-import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.config.productionTip = false;
