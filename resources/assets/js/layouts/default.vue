@@ -7,8 +7,8 @@
     </b-row class="mb-2">
 
     <b-row class="mt-2">
-        <b-col cols="3" v-if="user">
-          <Sidebar/>
+        <b-col cols="3" v-if="user" v-on:toggle-sidebar="onToggleSidebar">
+          <Sidebar :Status="SidebarStatus"/>
         </b-col>
         <b-col :cols=" user ? 9 : 12 ">
           <div class="page-content-wrapper">
@@ -26,14 +26,26 @@ import { mapGetters } from 'vuex'
 
 export default {
   name: 'MainLayout',
-
+  data : function() {
+    return {
+      SidebarStatus: true,
+    }
+  },
+  methods: {
+    onToggleSidebar: function () {
+      this.SidebarStatus = false;
+    }
+  },
+  computed: {
+    ...mapGetters({
+      user: 'auth/user'
+    }),
+  },
   components: {
     Navbar,
     Sidebar
-  },
-  computed: mapGetters({
-    user: 'auth/user'
-  }),
+  }
+
 }
 </script>
 
