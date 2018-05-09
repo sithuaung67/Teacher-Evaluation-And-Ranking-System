@@ -9,10 +9,23 @@
   sidebar="md"
   class="bs-drawer__animate">
     <b-list-group>
-      <b-list-group-item href="#some-link">Awesome link</b-list-group-item>
-      <b-list-group-item href="#" active>Link with active state</b-list-group-item>
-      <b-list-group-item href="#">Action links are easy</b-list-group-item>
-      <b-list-group-item href="#foobar" disabled>Disabled link</b-list-group-item>
+        <b-list-group-item :to="{ name: 'Teachers' }" tag ="router-link">
+          <fa icon="user" fixed-width/>
+          Teachers
+        </b-list-group-item>
+        <b-list-group-item :to="{ name: 'Students' }" tag ="router-link">
+          <fa icon="user" fixed-width/>
+          Students
+        </b-list-group-item>
+        <b-list-group-item :to="{ name: 'Questions' }" tag ="router-link">
+          <fa icon="user" fixed-width/>
+          Questions
+        </b-list-group-item>
+        <b-list-group-item :to="{ name: 'Results' }" tag ="router-link">
+          <fa icon="user" fixed-width/>
+          Results
+        </b-list-group-item>
+
     </b-list-group>
 
   </bs-drawer>
