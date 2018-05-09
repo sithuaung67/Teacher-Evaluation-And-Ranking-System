@@ -2,6 +2,10 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
 
+      <!-- <b-button class="mr-5" variant="outline-primary" v-on:click="$emit('toggle-sidebar')">
+          <fa icon="align-justify" fixed-width/>
+      </b-button> -->
+
       <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand">
         {{ appName }}
       </router-link>
@@ -82,7 +86,9 @@ export default {
 
       // Redirect to login.
       this.$router.push({ name: 'login' })
-    }
+    },
+
+
   }
 }
 </script>
