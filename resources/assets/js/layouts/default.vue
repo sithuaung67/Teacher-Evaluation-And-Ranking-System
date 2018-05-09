@@ -10,7 +10,7 @@
         <b-col cols="3" v-if="user">
           <Sidebar/>
         </b-col>
-        <b-col :cols=" user.name ? 9 : 12 ">
+        <b-col :cols=" user ? 9 : 12 ">
           <div class="page-content-wrapper">
             <child/>
           </div>
