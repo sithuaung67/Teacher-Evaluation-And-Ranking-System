@@ -1,11 +1,17 @@
 <template>
-  <div>
-    <h1>Hello World Greeting from results Component</h1>
-  </div>
+  <b-jumbotron header="Bootstrap Vue" lead="Bootstrap 4 Components for Vue.js 2" >
+    <p>For more information visit website</p>
+    <b-btn variant="primary" href="#">More Info</b-btn>
+  </b-jumbotron>
 </template>
 
 <script>
 export default {
-  name: 'results'
+  middleware: 'auth',
+  name: 'results',
+  data: () => ({
+  }),
+  method: {
+  }
 }
 </script>
