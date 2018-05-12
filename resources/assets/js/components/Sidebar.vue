@@ -24,8 +24,15 @@
           <fa icon="user" fixed-width/>
           Results
         </b-list-group-item>
+        <b-list-group-item :to="{ name: 'Subjects' }">
+          <fa icon="user" fixed-width/>
+          Subjects
+        </b-list-group-item>
+        <b-list-group-item :to="{ name: 'Section' }">
+          <fa icon="user" fixed-width/>
+          Section
+        </b-list-group-item>
     </b-list-group>
-
   </bs-drawer>
 </template>
 
