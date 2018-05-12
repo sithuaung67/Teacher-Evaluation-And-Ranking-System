@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "777287fc4aaae3154db63f6a9e15bf4d",
+    "content-hash": "244709f826f4adb02586f006fae8801e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3154,6 +3154,51 @@
             "time": "2016-01-20T08:20:44+00:00"
         },
         {
+            "name": "laravel/browser-kit-testing",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/browser-kit-testing.git",
+                "reference": "442a9de17b5acc1a140c322f67ea4ee0f1c42688"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/browser-kit-testing/zipball/442a9de17b5acc1a140c322f67ea4ee0f1c42688",
+                "reference": "442a9de17b5acc1a140c322f67ea4ee0f1c42688",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\BrowserKitTesting\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Provides backwards compatibility for BrowserKit testing in Laravel 5.4.",
+            "keywords": [
+                "laravel",
+                "testing"
+            ],
+            "time": "2017-01-24T13:11:16+00:00"
+        },
+        {
             "name": "laravel/dusk",
             "version": "v3.0.8",
             "source": {
@@ -4740,6 +4785,52 @@
                 "validate"
             ],
             "time": "2018-01-29T19:49:41+00:00"
+        },
+        {
+            "name": "zachleigh/laravel-vue-generators",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zachleigh/laravel-vue-generators.git",
+                "reference": "4220b1b9a1f54f6d087b4b558397a3c46113669b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zachleigh/laravel-vue-generators/zipball/4220b1b9a1f54f6d087b4b558397a3c46113669b",
+                "reference": "4220b1b9a1f54f6d087b4b558397a3c46113669b",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/browser-kit-testing": "^1.0",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "5.4.*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "VueGenerators\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zach Leigh",
+                    "email": "zachleigh@fastmail.jp"
+                }
+            ],
+            "description": "Generate Vue js files via artisan commands.",
+            "keywords": [
+                "generators",
+                "laravel",
+                "vue"
+            ],
+            "time": "2017-01-29T23:03:42+00:00"
         }
     ],
     "aliases": [],
