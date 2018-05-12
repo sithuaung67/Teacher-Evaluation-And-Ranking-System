@@ -156,7 +156,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+         VueGenerators\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
