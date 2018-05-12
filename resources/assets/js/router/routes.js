@@ -22,6 +22,12 @@ const questions          = () => import('~/pages/questions/questions').then(m =>
 // Results components
 const results          = () => import('~/pages/results/results').then(m => m.default || m)
 
+// Subjects components
+const subjects          = () => import('~/pages/subjects/subjects').then(m => m.default || m)
+
+// Section components
+const Section          = () => import('~/pages/section/section').then(m => m.default || m)
+
 export default [
   { path: '/',                      name: 'welcome',          component: Welcome },
 
@@ -38,10 +44,12 @@ export default [
       { path: 'profile',  name: 'settings.profile',  component: SettingsProfile },
       { path: 'password', name: 'settings.password', component: SettingsPassword }
     ]},
-  { path: '/teachers',  name: 'Teachers',  component: Teachers },
-  { path: '/students',  name: 'Students',  component: Students },
-  { path: '/questions', name: 'Questions', component: questions },
-  { path: '/results',   name: 'Results',   component: results },
+  { path: '/teachers',  name: 'Teachers',  component: Teachers }, // Route Link for Teachers
+  { path: '/students',  name: 'Students',  component: Students }, // Route Link for students
+  { path: '/questions', name: 'Questions', component: questions }, // Route Link for Questions
+  { path: '/results',   name: 'Results',   component: results }, // Route Link for results
+  { path: '/subjects',   name: 'Subjects',   component: subjects }, // Route Link for Subjects
+  { path: '/sections',   name: 'Section',   component: Section }, // Route Link for Section
 
   { path: '*', component: NotFound }
 ]
