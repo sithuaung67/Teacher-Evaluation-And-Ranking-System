@@ -1,8 +1,6 @@
-# Laravel-Vue SPA 
+# Teacher Evaluation And Ranking System
 
 <a href="https://travis-ci.org/cretueusebiu/laravel-vue-spa"><img src="https://travis-ci.org/cretueusebiu/laravel-vue-spa.svg?branch=master" alt="Build Status"></a>
-<a href="https://packagist.org/packages/cretueusebiu/laravel-vue-spa"><img src="https://poser.pugx.org/cretueusebiu/laravel-vue-spa/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/cretueusebiu/laravel-vue-spa"><img src="https://poser.pugx.org/cretueusebiu/laravel-vue-spa/v/stable.svg" alt="Latest Stable Version"></a>
 
 > A Laravel-Vue SPA starter project template.
 
@@ -12,27 +10,33 @@
 
 ## Features
 
-- Laravel 5.6 
+- Laravel 5.6
 - Vue + VueRouter + Vuex + VueI18n + ESlint
 - Pages with dynamic import and custom layouts
 - Login, register and password reset
 - Authentication with JWT
 - Socialite integration
 - Bootstrap 4 + Font Awesome 5
+- Vue Generator
 
 ## Installation
 
 - `composer create-project --prefer-dist cretueusebiu/laravel-vue-spa`
 - Edit `.env` and set your database connection details
 - (When installed via git clone or download, run `php artisan key:generate` and `php artisan jwt:secret`)
+- Make sure database is configured well (Do not use root as your database user instead create a new user)
 - `php artisan migrate`
-- `yarn` / `npm install`
+- `yarn` / `npm install` & `composer install`
 
 ## Usage
-
+````bash
+# move to project directory then
+````
 #### Development
 
 ```bash
+
+
 # build and watch
 npm run watch
 
