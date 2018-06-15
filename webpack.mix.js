@@ -4,14 +4,29 @@ const mix = require('laravel-mix')
 
 mix.config.vue.esModule = true
 
-mix
-  .js('resources/assets/js/app.js', 'public/js')
-  .sass('resources/assets/sass/app.scss', 'public/css')
-
-  .sourceMaps()
+  mix
+  .js('resources/assets/js/admin/app.js', 'public/js/admin')
   .disableNotifications()
 
-if (mix.inProduction()) {
+  mix
+  .js('resources/assets/js/student/app.js', 'public/js/student')
+  .disableNotifications()
+  
+  mix
+  .js('resources/assets/js/guest/app.js', 'public/js/guest')
+  .disableNotifications()
+  
+  mix
+  .js('resources/assets/js/teacher/app.js', 'public/js/teacher')
+  .disableNotifications()
+
+  mix
+  .sass('resources/assets/sass/app.scss', 'public/css')
+  .disableNotifications()
+
+  mix
+  .js('resources/assets/js/important_empty.js', 'public/js')
+
   mix.version()
 
   mix.extract([
@@ -31,7 +46,6 @@ if (mix.inProduction()) {
     '@fortawesome/fontawesome',
     '@fortawesome/vue-fontawesome'
   ])
-}
 
 mix.webpackConfig({
   plugins: [
@@ -44,7 +58,7 @@ mix.webpackConfig({
     }
   },
   output: {
-    chunkFilename: 'js/[name].[chunkhash].js',
+    chunkFilename: 'js/chunk/[name].[chunkhash].js',
     publicPath: mix.config.hmr ? '//localhost:8080' : '/'
   }
 })
