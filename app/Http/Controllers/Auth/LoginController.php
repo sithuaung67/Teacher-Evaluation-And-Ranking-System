@@ -10,6 +10,7 @@ class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
+    protected $redirectTo = 'guest.Tears.test';
     /**
      * Create a new controller instance.
      *
@@ -69,4 +70,5 @@ class LoginController extends Controller
     {
         $this->guard()->logout();
     }
+
 }
