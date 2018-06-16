@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'api',
+        'guard' => 'web',
         'passwords' => 'users',
     ],
 
@@ -51,6 +51,14 @@ return [
         'teacher' => [
             'driver' => 'jwt',
             'provider' => 'users',
+        ],
+        'basic' => [
+            'driver' => 'simple',
+            'credentials' => array(
+                'email'    => 'user@email.com',
+                'password' => 'yourpassword'
+            )
+        ]
     ],
 
     /*
@@ -75,11 +83,6 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*
